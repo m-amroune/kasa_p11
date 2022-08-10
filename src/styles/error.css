@@ -1,0 +1,28 @@
+.error-page {
+  position: relative;
+}
+
+.error-page h1 {
+  position: absolute;
+  color: #ff6060;
+  font-weight: 700;
+  font-size: 288px;
+  left: 411px;
+}
+
+.error-page h2 {
+  position: absolute;
+  top: 606px;
+  padding-left: 295px;
+  font-size: 36px;
+  color: #ff6060;
+}
+
+.error-page p a {
+  position: absolute;
+  top: 839px;
+  padding-bottom: 159px;
+  padding-left: 578px;
+  color: #ff6060;
+  font-size: 18px;
+}

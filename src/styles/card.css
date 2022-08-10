@@ -1,0 +1,38 @@
+.list-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  height: 340px;
+  width: 340px;
+  padding: 30px;
+  list-style-type: none;
+}
+
+.card img {
+  height: 340px;
+  width: 340px;
+  border-radius: 10px;
+}
+
+.card h3 {
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+  color: #fff;
+  list-style: none;
+  font-size: 18px;
+  font-weight: 500;
+  width: 300px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.accomodations {
+  background-color: #f6f6f6;
+  width: 1240px;
+  margin-left: 100px;
+  border-radius: 25px;
+}

@@ -1,0 +1,26 @@
+.footer {
+  position: relative;
+  height: 209px;
+  width: 1440px;
+  background-color: #000;
+  top: 900px;
+}
+
+.footer img {
+  height: 39.44px;
+  width: 122px;
+  position: absolute;
+  top: 66px;
+  left: 659px;
+}
+
+.footer p {
+  color: #fff;
+  position: absolute;
+  font-size: 24px;
+  width: 513px;
+  height: 46px;
+  top: 134px;
+  left: 463px;
+  text-align: center;
+}
