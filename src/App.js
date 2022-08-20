@@ -12,11 +12,11 @@ const App = ({ accomodation }) => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route
-          path="/accomodation/:id"
+          path="/details-logement/:id"
           element={<Details accomodation={accomodation} />}
         />
         {/* if url is unknown : error 404 */}
-        <Route path="*" element={<Error />} />
+        <Route path="*/" element={<Error />} />
       </Routes>
     </BrowserRouter>
   );

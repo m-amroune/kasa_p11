@@ -1,17 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import Header from "../components/Header";
 import { useParams } from "react-router-dom";
 import Slider from "../components/Slider";
+import Info from "../components/Info";
+import Error from "./Error";
 
-const Details = ({ data }) => {
+const Details = () => {
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    axios.get("../../data.json").then((res) => setData(res.data));
+  }, []);
+
   const { id } = useParams();
-  const getId = data.filter((accomodation) => accomodation.id === id);
-  return getId.map((accomodation, id) => (
-    <div key={id}>
-      <Header />
-      <Slider accomodation={accomodation} />
-    </div>
-  ));
+  let getId = data.filter((accomodation) => accomodation.id === id);
+
+  return getId.length > 0 ? (
+    getId.map((accomodation, id) => (
+      <div key={id}>
+        <Header />
+        <Slider accomodation={accomodation} />
+        <Info />
+      </div>
+    ))
+  ) : (
+    <Error />
+  );
 };
 
 export default Details;

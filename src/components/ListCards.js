@@ -14,9 +14,14 @@ const ListCards = () => {
     <div className="accomodations">
       <ul className="list-cards">
         {data.map((accomodation, index) => (
-          <Link to="/accomodation:id">
-            <Card key={index} accomodation={accomodation} />
-          </Link>
+          <div key={index}>
+            <Link
+              to={`/details-logement/${accomodation.id}`}
+              key={accomodation.id}
+            >
+              <Card key={index} accomodation={accomodation} />
+            </Link>
+          </div>
         ))}
       </ul>
     </div>
