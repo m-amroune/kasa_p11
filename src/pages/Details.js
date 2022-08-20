@@ -20,7 +20,7 @@ const Details = () => {
       <div key={id}>
         <Header />
         <Slider accomodation={accomodation} />
-        <Info />
+        <Info accomodation={accomodation} />
       </div>
     ))
   ) : (
