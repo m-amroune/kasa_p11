@@ -32,5 +32,11 @@ code {
 }
 
 .img-about {
+  margin-top: 50px;
   padding-left: 100px;
+  border-radius: 25px;
+}
+
+.about-page {
+  height: 1024px;
 }

@@ -1,0 +1,65 @@
+.profil-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-info {
+  margin-left: 100px;
+  font-size: 36px;
+  color: #ff6060;
+}
+
+.location-info {
+  margin-left: 100px;
+  font-size: 18px;
+  color: #ff6060;
+}
+
+.tags-info {
+  list-style-type: none;
+  font-size: 14px;
+  display: flex;
+  margin-left: 50px;
+}
+
+.tag-info {
+  background-color: #ff6060;
+  margin-left: 10px;
+  border-radius: 10px;
+  width: 115px;
+  text-align: center;
+  color: #fff;
+  height: 25px;
+  padding-top: 5px;
+}
+
+.name-img-info {
+  display: flex;
+  margin-right: 190px;
+  margin-top: 24px;
+}
+
+.name-info {
+  width: 93px;
+  margin-top: 10px;
+  color: #ff6060;
+}
+
+.img-info {
+  border-radius: 100px;
+  width: 64px;
+  height: 64px;
+  margin-left: 10px;
+}
+
+.list-equipments {
+  list-style-type: none;
+}
+
+.dropdowns-info {
+  display: flex;
+  flex-direction: row;
+  width: 1240px;
+  margin-left: 100px;
+  margin-bottom: 14px;
+}

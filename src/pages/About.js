@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Img from "../assets/img/banner-about.jpg";
 import Dropdown from "../components/Dropdown";
+import "../styles/index.css";
 
 const About = () => {
   const fiability = `Les annonces postées sur Kasa garantissent une fiabilité totale. 
@@ -19,7 +20,7 @@ const About = () => {
   domestique pour nos hôtes.`;
 
   return (
-    <div>
+    <div className="about-page">
       <Header />
       <img className="img-about" src={Img} alt="banner about" />
       <div className="dropdowns">

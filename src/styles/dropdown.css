@@ -20,10 +20,10 @@
 .btnContent {
   width: 1023px;
   color: #ff6060;
-}
-
-.btnBgc {
   background-color: #f6f6f6;
+  margin-top: -10px;
+  padding-top: 27px;
+  padding-bottom: 19px;
 }
 
 .dropdowns {

@@ -1,0 +1,32 @@
+.cover-slider {
+  margin-top: 25px;
+  margin-left: 100px;
+  height: 415px;
+  width: 1240px;
+  border-radius: 25px;
+}
+
+.cover-slider {
+  position: relative;
+}
+
+.left-slider {
+  position: absolute;
+  top: 280px;
+  left: 200px;
+  height: 79px;
+}
+
+.img-left-slider {
+  height: 79px;
+}
+
+.right-slider {
+  position: absolute;
+  top: 280px;
+  right: 200px;
+}
+
+.img-right-slider {
+  height: 79px;
+}
