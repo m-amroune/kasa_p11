@@ -2,6 +2,7 @@ import React from "react";
 import Dropdown from "./Dropdown";
 import Tag from "./Tag";
 import "../styles/info.css";
+import Stars from "./Stars";
 
 const Info = ({ accomodation }) => {
   return (
@@ -19,6 +20,7 @@ const Info = ({ accomodation }) => {
         <div className="name-img-info">
           <h3 className="name-info"> {accomodation.host.name} </h3>
           <img className="img-info" src={accomodation.host.picture} alt="" />
+          <Stars accomodation={accomodation} />
         </div>
       </div>
       <div className="dropdowns-info">

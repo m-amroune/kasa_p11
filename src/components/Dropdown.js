@@ -11,7 +11,9 @@ const Dropdown = ({ title, content }) => {
       <button className="btnDropdown" onClick={() => setIsOpen(false)}>
         {title} <img src={Up} alt="" />
       </button>
-      <p className="btnContent">{content}</p>
+      <div>
+        <ul className="btnContent">{content}</ul>
+      </div>
     </div>
   ) : (
     <button className="btnDropdown" onClick={() => setIsOpen(true)}>
