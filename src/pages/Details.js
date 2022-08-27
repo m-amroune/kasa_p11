@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import Carousel from "../components/Carousel";
 import Info from "../components/Info";
 import Error from "./Error";
+import Footer from "../components/Footer";
 
 const Details = () => {
   const [data, setData] = useState([]);
@@ -21,6 +22,7 @@ const Details = () => {
         <Header />
         <Carousel accomodation={accomodation} />
         <Info accomodation={accomodation} />
+        <Footer />
       </div>
     ))
   ) : (

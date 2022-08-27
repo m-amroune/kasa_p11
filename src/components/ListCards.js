@@ -14,7 +14,7 @@ const ListCards = () => {
     <div className="accomodations">
       <ul className="list-cards">
         {data.map((accomodation, index) => (
-          <div key={index}>
+          <div className="card" key={index}>
             <Link
               to={`/details-logement/${accomodation.id}`}
               key={accomodation.id}

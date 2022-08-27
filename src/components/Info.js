@@ -17,9 +17,11 @@ const Info = ({ accomodation }) => {
             ))}
           </ul>
         </div>
-        <div className="name-img-info">
-          <h3 className="name-info"> {accomodation.host.name} </h3>
-          <img className="img-info" src={accomodation.host.picture} alt="" />
+        <div>
+          <div className="name-img-info">
+            <h3 className="name-info"> {accomodation.host.name} </h3>
+            <img className="img-info" src={accomodation.host.picture} alt="" />
+          </div>
           <Stars accomodation={accomodation} />
         </div>
       </div>

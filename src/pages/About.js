@@ -22,7 +22,10 @@ const About = () => {
   return (
     <div className="about-page">
       <Header />
-      <img className="img-about" src={Img} alt="banner about" />
+      <figure>
+        <img className="img-about" src={Img} alt="banner about" />
+      </figure>
+
       <div className="dropdowns">
         <Dropdown title="Fiabilité" content={fiability} />
         <Dropdown title="Respect" content={respect} />

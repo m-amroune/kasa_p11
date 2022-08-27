@@ -4,8 +4,10 @@ import "../styles/card.css";
 const Card = ({ accomodation }) => {
   return (
     <li className="card">
-      <img src={accomodation.cover} alt="location" />
-      <h3>{accomodation.title}</h3>
+      <figure>
+        <img src={accomodation.cover} alt="location" />
+        <figcaption>{accomodation.title}</figcaption>
+      </figure>
     </li>
   );
 };

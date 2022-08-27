@@ -20,6 +20,7 @@
   font-size: 14px;
   display: flex;
   margin-left: 50px;
+  overflow: hidden;
 }
 
 .tag-info {
@@ -29,8 +30,8 @@
   width: 115px;
   text-align: center;
   color: #fff;
-  height: 25px;
-  padding-top: 5px;
+  min-height: 25px;
+  padding-top: 3px;
 }
 
 .name-img-info {
