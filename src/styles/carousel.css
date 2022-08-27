@@ -1,3 +1,7 @@
+.background-slider {
+  position: relative;
+}
+
 .cover-slider {
   margin-top: 25px;
   margin-left: 100px;
@@ -8,12 +12,13 @@
 
 .cover-slider {
   position: relative;
+  object-fit: cover;
 }
 
 .left-slider {
   position: absolute;
-  top: 280px;
-  left: 200px;
+  top: 41%;
+  left: 120px;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -21,12 +26,11 @@
 
 .img-left-slider {
   height: 79px;
-  color: white;
 }
 
 .right-slider {
   position: absolute;
-  top: 280px;
+  top: 40%;
   right: 200px;
   border: none;
   background-color: transparent;
@@ -35,4 +39,13 @@
 
 .img-right-slider {
   height: 79px;
+}
+
+.slides-counter {
+  position: absolute;
+  top: 88%;
+  left: 47%;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
 }
