@@ -5,7 +5,7 @@ import "../styles/header.css";
 
 const Header = () => {
   return (
-    <div className="header">
+    <header className="header">
       <img src={Img} alt="logo kasa" />
       <ul className="navigation">
         <NavLink
@@ -21,7 +21,7 @@ const Header = () => {
           <li>A Propos</li>
         </NavLink>
       </ul>
-    </div>
+    </header>
   );
 };
 

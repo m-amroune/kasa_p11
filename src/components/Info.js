@@ -6,7 +6,7 @@ import Stars from "./Stars";
 
 const Info = ({ accomodation }) => {
   return (
-    <div>
+    <section>
       <div className="profil-info">
         <div>
           <h1 className="title-info">{accomodation.title}</h1>
@@ -25,7 +25,7 @@ const Info = ({ accomodation }) => {
           <Stars accomodation={accomodation} />
         </div>
       </div>
-      <div className="dropdowns-info">
+      <section className="dropdowns-info">
         <Dropdown title="Description" content={accomodation.description} />
         <Dropdown
           title="Equipments"
@@ -35,8 +35,8 @@ const Info = ({ accomodation }) => {
             </li>
           ))}
         />
-      </div>
-    </div>
+      </section>
+    </section>
   );
 };
 

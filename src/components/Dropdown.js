@@ -7,14 +7,14 @@ const Dropdown = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
   // Ternaire
   return isOpen ? (
-    <div>
+    <section className="sectionDropdowns">
       <button className="btnDropdown" onClick={() => setIsOpen(false)}>
         {title} <img src={Up} alt="" />
       </button>
       <div>
         <ul className="btnContent">{content}</ul>
       </div>
-    </div>
+    </section>
   ) : (
     <button className="btnDropdown" onClick={() => setIsOpen(true)}>
       {title} <img src={Down} alt="" />

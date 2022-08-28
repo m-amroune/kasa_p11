@@ -9,7 +9,7 @@ const Carousel = ({ accomodation }) => {
 
   if (position === 0 && pictures.length > 1) {
     return (
-      <div className="background-slider">
+      <section className="background-slider">
         <figure>
           <img className="cover-slider" src={pictures[0]} alt="" />
         </figure>
@@ -29,11 +29,11 @@ const Carousel = ({ accomodation }) => {
             <img className="img-right-slider" src={Right} alt="" />
           </figure>
         </button>
-      </div>
+      </section>
     );
   } else if (position > 0) {
     return (
-      <div className="background-slider">
+      <section className="background-slider">
         <figure>
           <img
             className="cover-slider"
@@ -67,15 +67,15 @@ const Carousel = ({ accomodation }) => {
         <figcaption className="slides-counter">
           {(position + 1).toString()}/{pictures.length.toString()}
         </figcaption>
-      </div>
+      </section>
     );
   } else {
     return (
-      <div className="background-slider">
+      <section className="background-slider">
         <figure>
           <img className="cover-slider" src={accomodation.pictures[0]} alt="" />
         </figure>
-      </div>
+      </section>
     );
   }
 };

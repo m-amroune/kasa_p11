@@ -16,7 +16,7 @@ const App = ({ accomodation }) => {
           element={<Details accomodation={accomodation} />}
         />
         {/* if url is unknown : error 404 */}
-        <Route path="*/" element={<Error />} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </BrowserRouter>
   );
