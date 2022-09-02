@@ -6,7 +6,9 @@ import "../styles/header.css";
 const Header = () => {
   return (
     <header className="header">
-      <img src={Img} alt="logo kasa" />
+      <figure>
+        <img src={Img} alt="logo kasa" />
+      </figure>
       <ul className="navigation">
         <NavLink
           to="/"

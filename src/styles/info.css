@@ -70,8 +70,6 @@
 .dropdowns-info {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
   margin-left: 100px;
-  margin-bottom: 14px;
+  margin-right: 100px;
 }

@@ -1,11 +1,14 @@
 .header {
-  width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 100px;
   height: 171px;
   top: 40px;
 }
 
-.header img {
-  position: absolute;
+.header figure img {
   width: 210.32px;
   height: 68px;
   top: 40px;
@@ -14,11 +17,6 @@
 
 .navigation {
   display: flex;
-  position: absolute;
-  height: 34px;
-  top: 57px;
-  left: 1050px;
-  width: 309px;
 }
 
 .navigation a {
@@ -37,4 +35,24 @@
 
 .nav-active {
   text-decoration: underline;
+}
+
+@media all and (max-width: 768px) {
+  .header {
+    padding: 0 20px;
+  }
+
+  .navigation a li {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  .navigation a:nth-child(2) {
+    margin-left: 10px;
+  }
+  .header figure img {
+    width: 145px;
+    height: 47px;
+    top: 40px;
+    left: 100px;
+  }
 }

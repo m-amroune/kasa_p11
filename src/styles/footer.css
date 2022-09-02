@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   height: 209px;
-  width: 1440px;
+  width: 100%;
   background-color: #000;
   margin-top: 50px;
 }
@@ -22,4 +22,11 @@
   line-height: 34.22px;
   text-align: center;
   margin-top: 32px;
+}
+
+@media all and (max-width: 768px) {
+  .footer p {
+    font-size: 12px;
+    line-height: 17px;
+  }
 }

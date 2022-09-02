@@ -22,16 +22,18 @@ const About = () => {
   return (
     <div className="about-page">
       <Header />
-      <figure>
-        <img className="img-about" src={Img} alt="banner about" />
-      </figure>
+      <section className="main-about">
+        <figure>
+          <img className="img-about" src={Img} alt="banner about" />
+        </figure>
 
-      <div className="dropdowns">
-        <Dropdown title="Fiabilité" content={fiability} />
-        <Dropdown title="Respect" content={respect} />
-        <Dropdown title="Service" content={service} />
-        <Dropdown title="Sécurité" content={security} />
-      </div>
+        <div className="dropdowns">
+          <Dropdown title="Fiabilité" content={fiability} />
+          <Dropdown title="Respect" content={respect} />
+          <Dropdown title="Service" content={service} />
+          <Dropdown title="Sécurité" content={security} />
+        </div>
+      </section>
       <Footer />
     </div>
   );

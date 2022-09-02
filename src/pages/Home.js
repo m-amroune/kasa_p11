@@ -7,12 +7,15 @@ import ListCards from "../components/ListCards";
 
 const Home = () => {
   return (
-    <div>
+    <div className="home-page">
       <Header />
-      <div>
-        <h1 className="title-home">Chez vous, partout et ailleurs</h1>
-      </div>
-      <ListCards />
+      <section className="main-home">
+        <div className="cover-home">
+          <h1 className="title-home">Chez vous, partout et ailleurs</h1>
+        </div>
+
+        <ListCards />
+      </section>
       <Footer />
     </div>
   );

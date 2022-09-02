@@ -16,9 +16,9 @@ const Details = () => {
   const { id } = useParams();
   let getId = data.filter((accomodation) => accomodation.id === id);
   console.log(getId);
-  if (getId.length === 0) {
-    return <Navigate to="*" />;
-  }
+  // if (getId.length === 0) {
+  //   return <Navigate to="*" />;
+  // }
   return getId.map((accomodation, id) => (
     <div key={id}>
       <Header />

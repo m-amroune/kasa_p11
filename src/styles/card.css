@@ -1,24 +1,30 @@
 .list-cards {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding: 50px 0 0 0;
-  width: 1240px;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  padding: 50px 50px 0;
+  width: 100%;
+  border-radius: 25px;
+  background-color: #f6f6f6;
 }
 
 .card {
-  position: relative;
   height: 340px;
-  width: 340px;
+  width: 30%;
   list-style-type: none;
   margin-bottom: 50px;
 }
 
+.card figure {
+  position: relative;
+  width: 100%;
+}
+
 .card img {
   height: 340px;
-  width: 340px;
-  border-radius: 10px;
+  width: 100%;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .card figcaption {
@@ -38,9 +44,17 @@
   );
 }
 
-.accomodations {
-  background-color: #f6f6f6;
-  width: 1240px;
-  margin-left: 100px;
-  border-radius: 25px;
+@media all and (max-width: 768px) {
+  .list-cards {
+    background-color: #fff;
+    padding: 0;
+  }
+  .card {
+    width: 100%;
+    height: 255px;
+    margin-bottom: 20px;
+  }
+  .card img {
+    height: 255px;
+  }
 }
