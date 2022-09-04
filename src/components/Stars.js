@@ -7,7 +7,7 @@ import "../styles/stars.css";
 const Stars = ({ accomodation }) => {
   const allStars = Array(5).fill(0);
   return (
-    <div>
+    <div className="stars-rating">
       {allStars.map((_, index) =>
         accomodation.rating > index ? (
           <i key={index}>

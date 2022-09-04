@@ -1,5 +1,26 @@
-.starRating {
-  height: 30px;
+.stars-rating {
+  margin: 0 0 24px;
+  text-align: right;
+  width: 30%;
+  order: 5;
+}
+
+@media all and (max-width: 768px) {
+  .stars-rating {
+    margin: 0;
+    text-align: left;
+    width: 50%;
+    order: 4;
+  }
+}
+
+.stars-rating i {
   width: 30px;
-  margin-top: 30px;
+  height: 30px;
+}
+
+@media all and (max-width: 768px) {
+  .stars-rating i {
+    font-size: 15px;
+  }
 }

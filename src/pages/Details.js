@@ -20,10 +20,12 @@ const Details = () => {
   //   return <Navigate to="*" />;
   // }
   return getId.map((accomodation, id) => (
-    <div key={id}>
+    <div className="details-page" key={id}>
       <Header />
-      <Carousel accomodation={accomodation} />
-      <Info accomodation={accomodation} />
+      <section className="main-details">
+        <Carousel accomodation={accomodation} />
+        <Info accomodation={accomodation} />
+      </section>
       <Footer />
     </div>
   ));

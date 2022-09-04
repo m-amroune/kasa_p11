@@ -62,8 +62,11 @@ const Carousel = ({ accomodation }) => {
               : setPosition(0)
           }
         >
-          <img className="img-right-slider" src={Right} alt="" />
+          <figure>
+            <img className="img-right-slider" src={Right} alt="" />
+          </figure>
         </button>
+
         <figcaption className="slides-counter">
           {(position + 1).toString()}/{pictures.length.toString()}
         </figcaption>

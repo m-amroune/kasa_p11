@@ -1,24 +1,39 @@
 .background-slider {
   position: relative;
+  max-width: 1240px;
 }
 
-.cover-slider {
-  margin-top: 25px;
-  margin-left: 100px;
-  height: 415px;
-  width: 1240px;
-  border-radius: 25px;
-}
-
-.cover-slider {
+.background-slider figure {
   position: relative;
+  width: 100%;
+  margin-left: 100px;
+}
+
+@media all and (max-width: 768px) {
+  .background-slider figure {
+    margin: 0;
+    padding: 0 3%;
+  }
+}
+
+.cover-slider {
+  height: 415px;
+  width: 100%;
+  border-radius: 25px;
   object-fit: cover;
+}
+
+@media all and (max-width: 768px) {
+  .cover-slider {
+    height: 255px;
+    border-radius: 10px;
+  }
 }
 
 .left-slider {
   position: absolute;
   top: 41%;
-  left: 120px;
+  right: 90%;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -27,11 +42,16 @@
 .img-left-slider {
   height: 79px;
 }
+@media all and (max-width: 768px) {
+  .img-left-slider {
+    height: 20px;
+  }
+}
 
 .right-slider {
   position: absolute;
-  top: 40%;
-  right: 200px;
+  top: 41%;
+  left: 90%;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -39,6 +59,12 @@
 
 .img-right-slider {
   height: 79px;
+}
+
+@media all and (max-width: 768px) {
+  .img-right-slider {
+    height: 20px;
+  }
 }
 
 .slides-counter {
