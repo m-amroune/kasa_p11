@@ -1,28 +1,52 @@
 .error-page {
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .error-page h1 {
-  position: absolute;
   color: #ff6060;
   font-weight: 700;
   font-size: 288px;
-  left: 411px;
+  height: 263px;
+  text-align: center;
+  margin-bottom: 86px;
+}
+
+@media all and (max-width: 768px) {
+  .error-page h1 {
+    font-size: 96px;
+    height: 99px;
+    margin-bottom: 22px;
+  }
 }
 
 .error-page h2 {
-  position: absolute;
-  top: 606px;
-  padding-left: 295px;
   font-size: 36px;
+  font-weight: 500;
   color: #ff6060;
+  text-align: center;
+  margin-bottom: 182px;
+}
+
+@media all and (max-width: 768px) {
+  .error-page h2 {
+    font-size: 18px;
+    height: 52px;
+  }
+}
+
+.error-page p {
+  font-size: 18px;
+  text-align: center;
+  font-weight: 500;
+}
+
+@media all and (max-width: 768px) {
+  .error-page p {
+    font-size: 14px;
+  }
 }
 
 .error-page p a {
-  position: absolute;
-  top: 839px;
-  padding-bottom: 159px;
-  padding-left: 578px;
   color: #ff6060;
-  font-size: 18px;
 }

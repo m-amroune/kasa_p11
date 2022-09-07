@@ -29,6 +29,9 @@ const Carousel = ({ accomodation }) => {
             <img className="img-right-slider" src={Right} alt="" />
           </figure>
         </button>
+        <figcaption className="slides-counter">
+          {(position + 1).toString()}/{pictures.length.toString()}
+        </figcaption>
       </section>
     );
   } else if (position > 0) {

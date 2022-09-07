@@ -1,8 +1,8 @@
 import React from "react";
+import data from "./../data/data.json";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "../styles/index.css";
-
 import ListCards from "../components/ListCards";
 
 const Home = () => {
@@ -14,7 +14,7 @@ const Home = () => {
           <h1 className="title-home">Chez vous, partout et ailleurs</h1>
         </div>
 
-        <ListCards />
+        <ListCards data={data} />
       </section>
       <Footer />
     </div>

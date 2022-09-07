@@ -18,6 +18,8 @@ code {
   box-sizing: border-box;
 }
 
+/* HOMEPAGE */
+
 .cover-home {
   width: 100%;
 }
@@ -66,6 +68,7 @@ code {
     justify-content: left;
     padding-left: 16px;
     padding-right: 100px;
+    height: 111px;
   }
 }
 @media all and (max-width: 970px) {
@@ -73,6 +76,8 @@ code {
     padding-left: 16px;
   }
 }
+
+/* ABOUT PAGE */
 
 .img-about {
   border-radius: 25px;

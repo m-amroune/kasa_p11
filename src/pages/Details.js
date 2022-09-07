@@ -1,24 +1,20 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React from "react";
+import data from "./../data/data.json";
 import Header from "../components/Header";
-import { useParams, Navigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Carousel from "../components/Carousel";
 import Info from "../components/Info";
-
 import Footer from "../components/Footer";
+import Error from "./Error";
 
 const Details = () => {
-  const [data, setData] = useState([]);
-  useEffect(() => {
-    axios.get("../../data.json").then((res) => setData(res.data));
-  }, []);
-  // utiliser async await
   const { id } = useParams();
-  let getId = data.filter((accomodation) => accomodation.id === id);
-  console.log(getId);
-  // if (getId.length === 0) {
-  //   return <Navigate to="*" />;
-  // }
+  const getId = data.filter((accomodation) => accomodation.id === id);
+
+  if (getId.length === 0) {
+    return <Error />;
+  }
+
   return getId.map((accomodation, id) => (
     <div className="details-page" key={id}>
       <Header />

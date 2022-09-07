@@ -9,12 +9,9 @@ const App = ({ accomodation }) => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home accomodation={accomodation} />} />
         <Route path="/about" element={<About />} />
-        <Route
-          path="/details-logement/:id"
-          element={<Details accomodation={accomodation} />}
-        />
+        <Route path="/details-logement/:id" element={<Details />} />
         {/* if url is unknown : error 404 */}
         <Route path="*" element={<Error />} />
       </Routes>
