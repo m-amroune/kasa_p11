@@ -11,11 +11,11 @@ const Stars = ({ accomodation }) => {
       {allStars.map((_, index) =>
         accomodation.rating > index ? (
           <i key={index}>
-            <img className="starRating" src={RedStar} alt="" />
+            <img src={RedStar} alt="red star rating" />
           </i>
         ) : (
           <i key={index}>
-            <img className="starRating" src={GreyStar} alt="" />
+            <img src={GreyStar} alt="grey star rating" />
           </i>
         )
       )}

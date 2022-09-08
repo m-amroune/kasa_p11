@@ -9,7 +9,7 @@ import Footer from "../components/Footer";
 const Details = () => {
   const { id } = useParams();
   const getId = data.filter((accomodation) => accomodation.id === id);
-
+  // if url unknown : error page
   if (getId.length === 0) {
     return <Navigate to="*" />;
   }

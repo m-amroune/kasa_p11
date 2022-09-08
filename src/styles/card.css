@@ -29,7 +29,7 @@
 
 .card figcaption {
   position: absolute;
-  bottom: 0;
+  bottom: 3px;
   color: #fff;
   list-style: none;
   font-size: 18px;

@@ -1,4 +1,4 @@
-.btnDropdown {
+.btn-dropdown {
   width: 100%;
   height: 47px;
   color: #fff;
@@ -19,17 +19,17 @@
 }
 
 @media all and (max-width: 768px) {
-  .sectionDropdowns {
+  .section-dropdowns {
     margin-bottom: 20px;
     margin-right: 0;
   }
 }
 
-.btnDropdown img {
+.btn-dropdown img {
   height: 25px;
 }
 
-.btnContent {
+.btn-content {
   width: 100%;
   color: #ff6060;
   background-color: #f6f6f6;
@@ -48,12 +48,12 @@
   align-items: center;
 }
 
-.sectionDropdowns {
+.section-dropdowns {
   width: 100%;
 }
 
 @media all and (max-width: 768px) {
-  .btnDropdown {
+  .btn-dropdown {
     padding-right: 7px;
     font-size: 13px;
   }
