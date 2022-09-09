@@ -35,5 +35,4 @@ const Info = ({ accomodation }) => {
     </section>
   );
 };
-
 export default Info;

@@ -13,7 +13,7 @@ const About = () => {
   comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre 
   plateforme.`;
   const service = ` Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question. `;
-  const security = `La sécurité est la priorité de Kasa. Aussi bien pour nos 
+  const responsability = `La sécurité est la priorité de Kasa. Aussi bien pour nos 
   hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos 
   services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de 
   vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité 
@@ -31,7 +31,7 @@ const About = () => {
           <Dropdown title="Fiabilité" content={fiability} />
           <Dropdown title="Respect" content={respect} />
           <Dropdown title="Service" content={service} />
-          <Dropdown title="Sécurité" content={security} />
+          <Dropdown title="Responsabilité" content={responsability} />
         </div>
       </section>
       <Footer />
