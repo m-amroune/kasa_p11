@@ -1,10 +1,9 @@
 import React from "react";
-import data from "./../data/data.json";
 import Card from "./Card";
 import "../styles/card.css";
 import { Link } from "react-router-dom";
 
-const ListCards = () => {
+const ListCards = ({ data }) => {
   return (
     <div className="accomodations">
       <ul className="list-cards">

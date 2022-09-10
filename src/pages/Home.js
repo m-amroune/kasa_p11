@@ -1,11 +1,10 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import data from "./../data/data.json";
 import "../styles/index.css";
 import ListCards from "../components/ListCards";
 
-const Home = () => {
+const Home = ({ data }) => {
   return (
     <div className="home-page">
       <Header />

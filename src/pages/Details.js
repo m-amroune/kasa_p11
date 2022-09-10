@@ -1,12 +1,11 @@
 import React from "react";
-import data from "./../data/data.json";
-import Header from "../components/Header";
 import { useParams, Navigate } from "react-router-dom";
+import Header from "../components/Header";
 import Carousel from "../components/Carousel";
 import Info from "../components/Info";
 import Footer from "../components/Footer";
 
-const Details = () => {
+const Details = ({ data }) => {
   const { id } = useParams();
   const getId = data.filter((accomodation) => accomodation.id === id);
   // if url unknown : error page
